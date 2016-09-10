@@ -1,2 +1,2 @@
-# Franky
-Estructura base de framework para proyectos en PHP
+# Osadia
+Repositorio para desarrollo web
