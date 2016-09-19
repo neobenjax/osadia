@@ -1,3 +1,38 @@
+@font-face {
+    font-family: 'steelfish_rgregular';
+    src: url('../fonts/steelfish_rg-webfont.woff2') format('woff2'),
+         url('../fonts/steelfish_rg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'steelfishregular_italic';
+    src: url('../fonts/steelfish_rg_it-webfont.woff2') format('woff2'),
+         url('../fonts/steelfish_rg_it-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+  font-family: 'ITCAvantGardeStd-BkCn';
+  src:  url('../fonts/ITCAvantGardeStd-BkCn.eot?#iefix') format('embedded-opentype'),  
+        url('../fonts/ITCAvantGardeStd-BkCn.otf')  format('opentype'),
+        url('../fonts/ITCAvantGardeStd-BkCn.woff') format('woff'),
+        url('../fonts/ITCAvantGardeStd-BkCn.ttf')  format('truetype'),
+        url('../fonts/ITCAvantGardeStd-BkCn.svg#ITCAvantGardeStd-BkCn') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Corbel';
+  src:  url('../fonts/Corbel.eot?#iefix') format('embedded-opentype'),  
+        url('../fonts/Corbel.woff') format('woff'), 
+        url('../fonts/Corbel.ttf')  format('truetype'), 
+        url('../fonts/Corbel.svg#Corbel') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 /*! HTML5 Boilerplate v5.0.0 | MIT License | http://h5bp.com/ */
 
 /*
@@ -17,7 +52,7 @@
 }
 
 html {
-    color: #323232;
+    color: #ffffff;
     font-size: 16px;
     line-height: 1.4;
     text-rendering: optimizeLegibility !important;
@@ -122,7 +157,7 @@ p{margin:0;padding:0;}
 
 .no-movil {display: block;}
 
-ul {margin: 0px;padding: 0;}
+ul {margin: 0;padding: 0;list-style: none;}
 .movil-only{display:none!important;}
 /*AUTOCOMPLETE*/
 .ui-autocomplete {
@@ -543,9 +578,10 @@ header {
 }
 .contenido-centrado {
     width: 100%;
-    max-width: 1025px;
+    max-width: 1200px;
     margin: 0 auto;
     position: relative;
+    padding: 0 20px;
 }
 .contenido-centrado.over {
     position:absolute;
@@ -631,3 +667,518 @@ header {
     
 }
 
+
+
+body {
+    background: #000 url(../img/fondo.jpg) top center repeat-y;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+a.logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header.header {
+    border-bottom: 1px solid #fff;
+    padding: 16px 0;
+}
+
+ul.menu-principal {
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 89px);
+}
+
+ul.menu-principal > li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 35px;
+}
+
+ul.menu-principal > li > a {
+    display: block;
+    padding: 30px 15px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Corbel';
+    text-decoration:none;
+    width: 190px;
+    font-weight: bold;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+ul.menu-principal > li > a:hover {
+    color: #81da00;
+}
+
+img.logo-quienes {
+    width: 90%;
+    max-width: 673px;
+    margin: 20px 0;
+}
+
+.contenido-somos {
+    background: url(../img/fondo_recuado_quienes.png) no-repeat center center;
+    height: 332px;
+    margin-top: -60px;
+    padding: 60px 120px;
+}
+
+.contenido-somos > p {
+    font-size: 19px;
+    font-family: 'ITCAvantGardeStd-BkCn';
+}
+
+a.go-down.goto {
+    display: inline-block;
+    background: url(../img/go_down_1.png) no-repeat center center;
+    width: 70px;
+    height: 71px;
+}
+
+.go-down-cont {
+    text-align: center;
+    background: url(../img/garabatos.png) no-repeat top center;
+    padding-top: 120px;
+    margin-top: -79px;
+}
+
+div#somos {
+    margin-bottom: 100px;
+}
+
+.fondo-experiencia {
+    background: url(../img/fondo_experiencia.png) no-repeat top center;
+}
+
+div#experiencia {
+    padding-top: 50px;
+    margin-bottom: 80px;
+}
+
+img.logo-experiencia {
+    width: 90%;
+    max-width: 996px;
+    margin-top: 20px;
+}
+
+p.texto-experiencia {
+    font-size: 19px;
+    font-family: 'ITCAvantGardeStd-BkCn';
+    max-width: 816px;
+    margin: 50px auto 50px;
+}
+
+ul.marcas-experiencia {
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+ul.marcas-experiencia:after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+ul.marcas-experiencia > li {
+    display: block;
+    width: calc(100% / 5);
+    float: left;
+    margin-bottom: 20px;
+}
+
+ul.marcas-experiencia > li > span.marca {
+    display: block;
+    background-image: url(../img/marcas_experiencia.png);
+    width: 100%;
+    height: 72px;
+    margin: 0 auto;
+}
+
+ul.marcas-experiencia > li > span.marca.buchanans {
+    background-position: 0px 0px;
+    width: 191px;
+}
+
+ul.marcas-experiencia > li > span.marca.bundweiser {
+    background-position: -236px 0px;
+    width: 181px;
+}
+
+ul.marcas-experiencia > li > span.marca.bacardi {
+    background-position: -463px 0px;
+    width: 155px;
+}
+
+ul.marcas-experiencia > li > span.marca.audi {
+    background-position: -665px 0px;
+    width: 128px;
+}
+
+ul.marcas-experiencia > li > span.marca.reebok {
+    background-position: -832px 0px;
+    width: 157px;
+}
+
+ul.marcas-experiencia > li > span.marca.rexona {
+    background-position: -30px -104px;
+    width: 130px;
+}
+
+ul.marcas-experiencia > li > span.marca.impulse {
+    background-position: -255px -104px;
+    width: 127px;
+}
+
+ul.marcas-experiencia > li > span.marca.cocacola {
+    background-position: -467px -104px;
+    width: 139px;
+}
+
+ul.marcas-experiencia > li > span.marca.powerade {
+    background-position: -657px -104px;
+    width: 135px;
+}
+
+ul.marcas-experiencia > li > span.marca.delvalle {
+    background-position:0px -104px;
+}
+
+p.frase-idea {
+    font-size: 66px;
+    font-family: 'steelfish_rgregular';
+    line-height: 70px;
+    margin-bottom: 60px;
+}
+
+span.br {
+    display: block;
+}
+
+.verde {
+    color: #81da00;
+}
+
+div#fraseIdea {
+    padding: 250px 0px 250px;
+}
+
+.adorno-rodea {
+    background: url(../img/garabatos.png) no-repeat top center;
+    padding-top: 90px;
+}
+
+div.fondo-servicios {
+    background: url(../img/fondo_servicios.png) no-repeat top center;
+}
+
+div#servicios {
+    padding-top: 72px;
+    margin-bottom: 80px;
+}
+
+img.logo-servicios {
+    width: 90%;
+    max-width: 884px;
+    margin-top: 60px;
+    margin-bottom: 120px;
+}
+
+p.intro-servicios {
+    font-size: 19px;
+    font-family: 'ITCAvantGardeStd-BkCn';
+    max-width: 952px;
+    margin: 0 auto 60px;
+}
+
+ul.links-servicios {
+    padding: 20px;
+    display: block;
+    max-width: 900px;
+    margin: 0 auto 30PX;
+}
+
+ul.links-servicios:after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+ul.links-servicios > li {
+    display: block;
+    float: left;
+    width: calc(100% / 5);
+}
+
+ul.links-servicios > li > a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'steelfish_rgregular';
+    font-size:23px;
+    display: block;
+    width: 135px;
+    margin: 0 auto;
+}
+
+ul.links-servicios > li > a:before {
+    display: block;
+    width: 125px;
+    height: 130px;
+    content: '';
+    margin: 0 auto 20px;
+    background-image: url(../img/botones_servicios.png);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+ul.links-servicios > li > a:hover:before{
+    opacity:0.72;
+}
+
+ul.links-servicios > li > a.servicio.creatividad:before {
+    background-position: 0px 0px;
+}
+
+ul.links-servicios > li > a.servicio.shopper:before {
+    background-position: -191px 0px;
+}
+
+ul.links-servicios > li > a.servicio.promociones:before {
+    background-position: -383px 0px;
+}
+
+ul.links-servicios > li > a.servicio.digital:before {
+    background-position: -575px 0px;
+}
+
+ul.links-servicios > li > a.servicio.packaging:before {
+    background-position: -765px 0px;
+}
+
+div#servicio-intro {
+    margin-bottom: 90px;
+    background: none;
+}
+
+h2.subtitulo-servicios.adorno-lateral {
+    font-size: 76px;
+    color: #ef3485;
+    text-transform: uppercase;
+    font-family: 'steelfish_rgregular';
+    font-weight:normal;
+    display: inline-block;
+    position: relative;
+    line-height: 76px;
+    margin: 70px 0;
+}
+h2.subtitulo-servicios.adorno-lateral:before,
+h2.subtitulo-servicios.adorno-lateral:after{
+    content:'';
+    display:inline-block;
+    vertical-align:middle;
+    height: 75px;
+    width: 65px;
+    background-image: url(../img/adorno_titulos_creatividad.png);
+    background-repeat: no-repeat;
+}
+h2.subtitulo-servicios.adorno-lateral:before{
+    background-position:0px 0px;
+}
+h2.subtitulo-servicios.adorno-lateral:after{
+    background-position: -95px 0px;
+}
+
+p.descripcion-servicio {
+    font-size: 20px;
+    font-family: 'ITCAvantGardeStd-BkCn';
+    max-width: 730px;
+    margin: 0 auto 80px;
+}
+
+p.minidisclaimer {
+    font-size: 14px;
+    font-family: 'ITCAvantGardeStd-BkCn';
+    color: #555656;
+    padding: 50px 20px;
+}
+
+
+.fondo-contacto {
+    background: url(../img/fondo_contacto.png) no-repeat top center;
+}
+
+img.logo-contacto {
+    max-width: 760px;
+    width: 90%;
+    margin-bottom: 50px;
+}
+
+form.contacto-style {
+    display: block;
+    background: rgba(54,54,54,0.84);
+    margin: 0 auto;
+    max-width: 746px;
+    width: 90%;
+    font-family: 'steelfish_rgregular';
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+ul.campos-formulario {
+    padding: 10px 0px 0;
+}
+
+ul.campos-formulario > li {
+    margin-bottom: 10px;
+}
+
+label.lbl-form {
+    display: inline-block;
+    vertical-align: top;
+    width: 70px;
+    margin-right: 10px;
+    text-align: left;
+}
+
+.input-dark {
+    border-radius: 0;
+    color: #fff;
+    font-family: 'steelfish_rgregular';
+    font-size: 30px;
+    background: #000;
+    border: none;
+    width: calc(100% - 130px);
+    max-width: 550px;
+    padding: 10px;
+}
+
+.text-area {
+    height: 149px;
+    max-height: 149px;
+}
+
+p.contacto-datos {
+    font-size: 24px;
+    font-family: 'steelfish_rgregular';
+}
+
+p.contacto-datos a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+.adorno-rodea-contacto {
+    background: url(../img/garabatos.png) no-repeat top center;
+    padding-top: 110px;
+    margin-top: -100px;
+    position: relative;
+    z-index: 1;
+}
+
+div.contenido-seccion:not(#servicio-intro) {
+    background: rgba(0,0,0,0.27);
+}
+
+div#servicio-creatividad {
+    position: relative;
+    margin-top: 470px;
+}
+
+div#servicio-creatividad:before {
+    content: '';
+    width: 100%;
+    position: relative;
+    display: block;
+    background: url(../img/divisor_creatividad_1.png) no-repeat top center;
+    height: 468px;
+    top: -370px;
+    margin-bottom: -450px;
+}
+
+div#servicio-shopper {
+    position: relative;
+    margin-top: 470px;
+}
+
+div#servicio-promociones {
+    position: relative;
+    margin-top: 470px;
+}
+
+div#servicio-digital {
+    position: relative;
+    margin-top: 470px;
+}
+
+div#servicio-packaging {
+    position: relative;
+    margin-top: 470px;
+}
+
+div#servicio-shopper:before{
+    content: '';
+    width: 100%;
+    position: relative;
+    display: block;
+    background: url(../img/divisor_creatividad_2.png) no-repeat top center;
+    height: 468px;
+    top: -370px;
+    margin-bottom: -450px;
+}
+div#servicio-promociones:before{
+    content: '';
+    width: 100%;
+    position: relative;
+    display: block;
+    background: url(../img/divisor_creatividad_3.png) no-repeat top center;
+    height: 468px;
+    top: -370px;
+    margin-bottom: -450px;
+}
+div#servicio-digital:before{
+    content: '';
+    width: 100%;
+    position: relative;
+    display: block;
+    background: url(../img/divisor_creatividad_4.png) no-repeat top center;
+    height: 468px;
+    top: -370px;
+    margin-bottom: -450px;
+}
+div#servicio-packaging:before{
+    content: '';
+    width: 100%;
+    position: relative;
+    display: block;
+    background: url(../img/divisor_creatividad_5.png) no-repeat top center;
+    height: 468px;
+    top: -370px;
+    margin-bottom: -450px;
+}
+
+.fondo-servicio-creatividad {
+    background: url(../img/fondo_creatividad_1.png) no-repeat 100% 50%;
+}
+
+.fondo-servicio-shopper {
+    background: url(../img/fondo_shoppermkt.png) no-repeat 0% 50%;
+}
+
+.fondo-servicio-promociones {
+    background: url(../img/fondo_promociones.png) no-repeat 100% 50%;
+}
+
+.fondo-servicio-digital {
+    background: url(../img/fondo_digital.png) no-repeat 0% 50%;
+}
+.fondo-servicio-packaging {
+    background: url(../img/fondo_packaging.png) no-repeat 100% 50%;
+}

@@ -18,7 +18,7 @@
 <link rel="shortcut icon" href="<?php echo $baseURL;?>assets/iconos/apple-touch-icon-precomposed.png">
 
 
-<title>Franky</title>
+<title>Osadia</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
 
