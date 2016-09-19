@@ -1182,3 +1182,7 @@ div#servicio-packaging:before{
 .fondo-servicio-packaging {
     background: url(../img/fondo_packaging.png) no-repeat 100% 50%;
 }
+
+div#contacto {
+    margin-bottom: 50px;
+}
